@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="15dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEVEL COMPLETE"
+            android:textColor="#4E55FF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="4dp"
+            android:background="#4E55FF"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You cleared Level 1!"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnAction"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="NEXT LEVEL"
+            android:backgroundTint="#4E55FF"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="QUIT"
+            android:backgroundTint="#FF4E4E"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
